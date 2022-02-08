@@ -6,9 +6,28 @@
 	<title>Test</title>
 </head>
 <body>
-<img src="/img/bella.jpg">
-Happy Valentine's day
-<br>
-Test 3
+<style type="text/css">
+	body {
+		background: orange;
+	}
+	#bella {
+		width: 300px;
+		height: 250px;
+	}
+</style>
+<t>Happy Valentine's Day</t>
+<img id='bella' src="/img/bella.jpg">
+<script type="text/javascript">
+	function step1() {
+		var name = window.prompt("???: What's your name!")
+		if (name != "Yeobo" | "Yeonjee") {
+			window.alert("heh I don't know you go away!")
+		}
+		if (name == "Yeobo" | "Yeonjee") {
+			window.alert("Oh hi :>")
+		}
+	}
+	//setTimeout(function() {step1()}, 1000);
+</script>
 </body>
 </html>
