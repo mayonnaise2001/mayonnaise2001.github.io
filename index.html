@@ -40,12 +40,13 @@
 </div>
 <script type="text/javascript">
 	function step1() {
+		const validNames = ["Yeonjee", "Cheobo"]
 		var name = window.prompt("???: What's your name!")
-		if (name != "Yeobo" | "Yeonjee") {
-			window.alert("heh I don't know you go away!")
-		}
-		if (name == "Yeobo" | "Yeonjee") {
+		if (validNames.includes(name.toLowerCase())) {
 			window.alert("Oh hi :>")
+		}
+		else {
+			window.alert("heh I don't know you go away!")
 		}
 	}
 	setTimeout(function() {step1()}, 1000);
